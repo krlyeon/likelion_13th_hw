@@ -1,0 +1,22 @@
+.navbar-container {
+    width: 100%;
+    padding: 15px 40px;
+    justify-content: flex-end;
+    gap: 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-link {
+    font-family: 'Ownglyph_meetme-Rg', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ddd;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #E73879;
+    color: #fff;
+}

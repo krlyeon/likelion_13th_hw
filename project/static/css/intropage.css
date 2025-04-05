@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ownglyph_meetme-Rg', sans-serif;
+    background-color: #213555;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: calc(100vw - 300px);
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #F5EFE7;
+    border-radius: 10px;
+}
+
+.left_container {
+    width: 35%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    border: solid #213555 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.left_container h2, .left_container h3, .left_container p {
+    margin: 10px 3px;
+}
+
+.left_container h2 {
+    color: #E73879;
+}
+
+.left_container h3 {
+    color: #3E5879;
+}
+
+.right_container {
+    width: 65%;
+    padding: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.right_container section {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 200px;
+}
+
+.right_container section h2 {
+    color: #E73879;
+    margin-bottom: 10px;
+}
+
+.right_container section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #3E5879;
+    font-size: 20px;
+}
+
+.right_container section ul li {
+    margin-bottom: 8px;
+}
+
+.right_container section a {
+    color: #213555;
+    text-decoration: underline;
+}

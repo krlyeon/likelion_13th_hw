@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/summarypage.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="contents">4/2 Django session 강의 요약</h1>
+        <h2 class="contents">개발 세팅
+            <ol class="session_content">
+                <li>개발 환경 세팅
+                    <ul>
+                        <li>pipenv shell을 통한 가상 환경 실행</li>
+                    </ul>
+                </li>
+                <li>gitignore 파일 준비
+                    <ul>
+                        <li>db, media와 같은 충돌 위험 파일을 깃 추적에서 제외</li>
+                    </ul>
+                </li>
+                <li>Templates 디렉토리 생성
+                    <ul>
+                        <li>HTML, CSS 등 사용자에게 보여줄 레이아웃과 구조를 한 곳에 정리</li>
+                    </ul>
+                </li>
+                <li>views.py 작성
+                    <ul>
+                        <li>작성한 HTML 파일을 연결하기 위한 view 함수 구성</li>
+                    </ul>
+                </li>
+                <li>urls.py 작성
+                    <ul>
+                        <li>원하는 URL 경로에 해당하는 view 연결 설정</li>
+                    </ul>
+                </li>
+                <li>앱 실행
+                    <ul>
+                        <li>python manage.py runserver 명령어로 로컬 서버 실행</li>
+                    </ul>
+                </li>
+            </ol>
+        </h2>
+
+        <h2 class="contents">링크 연결</h2>
+        <ul class="session_content">
+            <li>형식: {% templatetag openblock %} url 'intropage' {% templatetag closeblock %}</li>
+            <li>urls.py에서 지정한 name을 기반으로 페이지 간 이동 구현</li>
+        </ul>
+
+        <h2 class="contents">템플릿 변수 사용법</h2>
+        <ul class="session_content">     
+            <li>변수명: 기본 변수 출력</li>
+            <li>변수명.속성명: 객체 속성 접근</li>
+            <li>리스트.인덱스: 리스트의 특정 요소 접근</li>
+            <li>딕셔너리.key: 딕셔너리 값 접근</li>
+            <li>템플릿 내 for, if 등의 문법 사용 가능</li>
+        </ul>
+
+        <h2 class="contents">템플릿 상속</h2>
+        <ul class="session_content">
+            <li>{% templatetag openblock %} block content {% templatetag closeblock %}: 다른 템플릿에서 채워질 부분 정의</li>
+            <li>{% templatetag openblock %} endblock {% templatetag closeblock %}: 블록 종료</li>
+        </ul>
+    </div>
+{% endblock %}

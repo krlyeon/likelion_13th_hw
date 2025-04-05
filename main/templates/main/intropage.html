@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/intropage.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="left_container">
+            <img src="{% static 'images/picture.png' %}" alt="logo" class="profile-photo">
+            <h2>안녕하세요, 박수연입니다.</h2>
+            <h3>목표를 향해 한단계씩!</h3>
+            <p>열심히 배우는중..</p>
+        </div>
+        <div class="right_container">
+            <section class="school">
+                <h2>학력</h2>
+                <ul>
+                    <li>분당대진고등학교(2019-2022)</li>
+                    <li>동국대학교 정보통신공학과(2023~)</li>
+                </ul>
+            </section>
+            <section class="awards">
+                <h2>수상 내역</h2>
+                <ul>
+                    <li>잠 오래 자기 대회 - 우수상</li>
+                    <li>많이 먹기 대회 - 우수상</li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>프로젝트</h2>
+                <ul>
+                    <li>
+                        <h3>[Pictory]</h3>
+                        <p>[인생네컷으로 만드는 나만의 일기장]</p>
+                        <p><a href="www.pictory.site">프로젝트 링크</a></p>
+                    </li>
+                </ul>
+            </section>
+            <section class="contact">
+                <h2>contact</h2>
+                <ul class="contact">
+                    <li>010-8728-8427</li>
+                    <li>sooyeon8427@gmail.com</li>
+                    <li><a href="https://github.com/krlyeon">krlyeon </a>깃허브</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+{% endblock %}
